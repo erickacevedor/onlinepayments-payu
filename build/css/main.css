@@ -1,0 +1,162 @@
+/* Colores */
+.static, .nostatic {
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate3d(0, 0, 0);
+  background-position: center !important; }
+
+@media (min-width: 992px) {
+  .static {
+    background-attachment: fixed; } }
+
+.nostatic {
+  background-attachment: scroll; }
+
+.box, .hgroup {
+  float: left;
+  position: relative;
+  width: 100%; }
+
+.container {
+  padding-bottom: 0; }
+
+.equalHeight {
+  height: 100%; }
+
+@media (max-width: 767px) {
+  .container.equalHeight {
+    width: 100%; } }
+
+/* Elementos generales */
+.mouse {
+  display: block;
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 12px);
+  width: 24px;
+  height: 38px;
+  border: 2px solid #fff;
+  border-radius: 15px; }
+.mouse .wheel {
+  display: block;
+  margin: 0 0 0 -2px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  animation: scroll-wheel 1.8s linear 0s infinite normal none; }
+
+/* Animaciones */
+@keyframes scroll-wheel {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; }
+  35% {
+    transform: translate3d(0, 7px, 0);
+    opacity: 1; }
+  50% {
+    transform: translate3d(0, 10px, 0);
+    opacity: 0; }
+  50.001% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0; }
+  80% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0; } }
+@font-face {
+  font-family: 'Mark';
+  src: url("fonts/Mark-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Mark';
+  src: url("fonts/Mark-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+html {
+  font-size: 16px; }
+
+body {
+  color: #565656;
+  font-family: 'Mark';
+  font-size: 1rem; }
+
+h1, h2, h3 {
+  letter-spacing: -0.05313rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* Nav */
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block; } }
+/* Nav */
+header {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #093a75;
+  color: #fff; }
+header h1 {
+  font-weight: bolder; }
+header .btn {
+  background-color: #ee9030;
+  color: #fff;
+  border: 0;
+  border-radius: 50px;
+  padding: 6px 20px; }
+
+#app {
+  padding: 0 0 50px; }
+#app .title.hgroup {
+  text-align: center;
+  padding: 50px 0 20px; }
+#app .title.hgroup h3 {
+  margin: 0; }
+#app form#form-home {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px; }
+#app form#form-home input {
+  border: 2px solid #ddd;
+  box-shadow: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 20px 15px 18px;
+  color: #093a75; }
+#app form input.paymentPayUConfirm, #app form input#typeSubmit {
+  background-color: #ee9030;
+  border: 0;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #fff; }
+#app #form-payu {
+  float: left;
+  position: relative;
+  width: 100%; }
+#app #form-payu input[type=submit] {
+  float: right; }
+#app .table-data-container {
+  margin: 50px 0 20px; }
+
+footer {
+  background-color: #093a75;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0; }
+footer h4 {
+  font-weight: bolder;
+  font-size: 1.3125rem; }
+
+/*# sourceMappingURL=main.css.map */

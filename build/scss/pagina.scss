@@ -1,0 +1,73 @@
+header{
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-color: $azul;
+	color: #fff;
+	h1{
+		font-weight: bolder;
+	}
+	.btn{
+		background-color: $naranja;
+		color: #fff;
+		border: 0;
+		border-radius: 50px;
+		padding: 6px 20px;
+	}
+}
+#app{
+	padding: 0 0 50px;
+	.title.hgroup{
+		text-align: center;
+		padding: 50px 0 20px;
+		h3{
+			margin: 0;
+		}
+	}
+	form#form-home{
+		max-width: 600px;
+		margin: 0 auto;
+		padding: 20px;
+		input{
+			border: 2px solid #ddd;
+			box-shadow: none;
+			border-radius: 5px;
+			margin-bottom: 15px;
+			padding: 20px 15px 18px;
+			color: $azul;
+		}
+	}
+	form{
+		input.paymentPayUConfirm,
+		input#typeSubmit{
+			background-color: $naranja;
+			border: 0;
+			color: #fff;
+			padding: 12px 20px;
+			border-radius: 5px;
+			margin-top: 20px;
+			color: #fff;
+		}
+	}
+	#form-payu{
+		@include box;
+		input[type=submit]{
+			float: right;
+		}
+	}
+	.table-data-container{
+		margin: 50px 0 20px;
+	}
+}
+
+footer{
+	background-color: $azul;
+	color: #fff;
+	text-align: center;
+	padding: 50px 0;
+	h4{
+		font-weight: bolder;
+		@include font-size(21px);
+	}
+}

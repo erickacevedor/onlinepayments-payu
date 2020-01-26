@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Mark';
+  src: url("fonts/Mark-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+   }
+@font-face {
+  font-family: 'Mark';
+  src: url("fonts/Mark-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; 
+}
+html{
+	font-size: 16px;
+}
+body{
+	color: #565656;
+	font-family: 'Mark';
+	@include font-size(16px);
+}
+h1,h2,h3{
+	letter-spacing: calculateRem(-0.85px);
+}
+h1,h2,h3,h4,h5,h6{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

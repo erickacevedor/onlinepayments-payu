@@ -1,0 +1,29 @@
+/* Colores */ 
+
+$naranja:	#ee9030;	
+$azul:		#093a75;
+
+@mixin box{
+	float: left;
+	position: relative;
+	width: 100%;
+}
+@mixin opacitybefore($opacity){
+	background-color: rgba(0, 0, 0,1);
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: $opacity;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+	font-size: calculateRem($size);
+}
